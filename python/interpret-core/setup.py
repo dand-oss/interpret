@@ -65,8 +65,6 @@ extras = {
         sklearn_dep,
         joblib_dep,
     ],
-    "debug": ["psutil>=5.6.2"],
-    "notebook": ["ipykernel>=5.1.0", "ipython>=7.4.0"],
     # Plotly (required if .visualize is ever called)
     "plotly": ["plotly>=3.8.1"],
     # Explainers
@@ -78,26 +76,6 @@ extras = {
     "decisiontree": [joblib_dep],
     "skoperules": ["skope-rules>=1.0.1"],
     "treeinterpreter": ["treeinterpreter>=0.2.2"],
-    # Dash
-    "dash": [
-        "dash>=1.0.0",
-        "dash-cytoscape>=0.1.1",
-        "dash-table>=4.1.0",
-        "gevent>=1.3.6",
-        "requests>=2.19.0",
-    ],
-    # Testing
-    "testing": [
-        "pytest>=4.3.0,<=6.0.2",
-        "pytest-runner>=4.4",
-        "pytest-xdist>=1.29",
-        "nbconvert>=5.4.1",
-        "selenium>=3.141.0",
-        "pytest-cov>=2.6.1",
-        "flake8>=3.7.7",
-        "jupyter>=1.0.0",
-        "ipywidgets>=7.4.2",
-    ],
 }
 
 def _copy_native_code_to_setup():
